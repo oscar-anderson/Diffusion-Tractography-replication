@@ -2,7 +2,7 @@
 
 This diffusion tractography pipeline replicates the methods employed by the MSc Dissertation project 'The Modulation of Intrinsic Alertness in Older Adults by Disrupted Sleep and Differences in White Matter Microstructure of Right Lateralised Thalamocortical Tracts Within the Alertness Network'. This analysis aimed to identify the white matter thalamocortical tracts that comprise the brain's alertness network, for five of the 50 participants studied in the original report.
 
-## Directory/file organisation
+## Data/directory organisation
 
 All files/folders used in this analysis can be found in the /home/people/ota277/replication/part_A directory. Each participant's data was placed in the respective /vasXX subdirectory of the /part_A directory, where XX is the participant's identifying number.
 
