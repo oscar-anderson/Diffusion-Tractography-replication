@@ -1,19 +1,18 @@
 # Diffusion_Tractography_replication
 
-This diffusion tractography pipeline replicates the methods employed by the MSc Dissertation project 'The Modulation of Intrinsic Alertness in Older Adults by Disrupted Sleep and Differences in White Matter Microstructure of Right Lateralised Thalamocortical Tracts Within the Alertness Network'. This analysis aimed to identify the white matter thalamocortical tracts that comprise the brain's alertness network, for five of the 50 participants studied in the original report.
+This diffusion tractography pipeline replicates the methods employed by the MSc Dissertation project 'The Modulation of Intrinsic Alertness in Older Adults by Disrupted Sleep and Differences in White Matter Microstructure of Right Lateralised Thalamocortical Tracts Within the Alertness Network' (which can be found in the /Report folder of this repository). This analysis aimed to identify the white matter thalamocortical tracts that comprise the brain's alertness network, for five of the 50 participants studied in the original report.
 
 ## Data/directory organisation
 
-All files/folders used in this analysis can be found in the /home/people/ota277/replication/part_A directory. Each participant's data was placed in the respective /vasXX subdirectory of the /part_A directory, where XX is the participant's identifying number.
-
-This was achieved by navigating to the replication folder and creating a new directory:
+All files/folders used in this analysis were stored in the /home/people/ota277/replication directory of the University of Birmingham's Parallel Brain Imaging computer Cluster (PBIC). This analysis replication began by navigating to the replication folder and creating a new directory:
 ```
 pwd <br>
 cd /home/people/ota277/replication <br>
 mkdir part_A <br>
 ```
+Each participant's data was stored in the respective /vasXX subdirectory of this new /part_A directory, where XX is the participant's identifying number.
 
-The raw T1 and diffusion data for each participant was already available and was placed in the /raw_data subdirectory within each participant directory. Also provided was the pre-processed, distortion-corrected 4D diffusion data (data.nii.gz); a single non-diffusion-weighted 3D volume of the 4D diffusion data (nodif.nii.gz); a binary brain mask of the non-diffusion-weighted volume (nodif_brain_mask.nii.gz); a skull-stripped version the 3D volume (nodif_brain.nii.gz); and a fractional anisotropy map obtained from a prior fitting of a diffusion tensor (dti_FA.nii.gz). These files were placed in the /data subdirectory of each participant directory.
+The raw T1 and diffusion data for each participant was already available and was placed in a /raw_data subdirectory within each participant directory. Also provided was the pre-processed, distortion-corrected 4D diffusion data (data.nii.gz); a single non-diffusion-weighted 3D volume of the 4D diffusion data (nodif.nii.gz); a binary brain mask of the non-diffusion-weighted volume (nodif_brain_mask.nii.gz); a skull-stripped version the 3D volume (nodif_brain.nii.gz); and a fractional anisotropy map obtained from a prior fitting of a diffusion tensor (dti_FA.nii.gz). These files were placed in the /data subdirectory of each participant directory.
 
 ## BET
 First, FSL's (6.0.1) Brain Extraction Tool (BET) was called from the command line, in order to remove non-brain areas from the provided T1 image for each participant (T1.nii.gz; located in the /raw_data subdirectory, within each respective participant directory). The output of this call was a skull-stripped T1 image (T1_brain.nii.gz; saved in the /data subdirectory, within each respective participant directory. This was repeated for each participant:
