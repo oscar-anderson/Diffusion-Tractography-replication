@@ -1,6 +1,8 @@
 # Diffusion_Tractography_replication
 
-This diffusion tractography pipeline replicates the methods employed by the MSc Dissertation project 'The Modulation of Intrinsic Alertness in Older Adults by Disrupted Sleep and Differences in White Matter Microstructure of Right Lateralised Thalamocortical Tracts Within the Alertness Network' (which can be found in the /Report folder of this repository). This analysis aimed to identify the white matter thalamocortical tracts that comprise the brain's alertness network, for five of the 50 participants studied in the original report.
+This diffusion tractography pipeline replicates the methods employed by the MSc Dissertation project 'The Modulation of Intrinsic Alertness in Older Adults by Disrupted Sleep and Differences in White Matter Microstructure of Right Lateralised Thalamocortical Tracts Within the Alertness Network' (which can be found in the /Literature folder of this repository). This analysis aimed to identify the white matter thalamocortical tracts that comprise the brain's alertness network, for five of the 50 participants studied in the original report.
+
+The Centre for Human Brain Health's (CHBH) Parallel Brain Imaging computer Cluster (PBIC), based at the University of Birmingham, was used to store the data and run the analyses for this project. This uses Linux as the OS.
 
 ## Data/directory organisation
 
